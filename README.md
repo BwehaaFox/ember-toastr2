@@ -1,5 +1,7 @@
 # ember-toastr
 
+> Note: this is a fork of [toastr](https://github.com/CodeSeven/toastr). This library is made to use it without jQuery and with Typescript
+
 A service wrapper for [toastr.js] with auto injection into routes, components, and controllers.
 
 [![npm version](https://badge.fury.io/js/ember-toastr.svg)](http://badge.fury.io/js/ember-toastr)

@@ -12,6 +12,6 @@ module.exports = {
   // }
 
   afterInstall: function () {
-    return this.addPackageToProject('toastr');
+    return this.addPackageToProject('toastr2');
   },
 };
