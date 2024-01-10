@@ -25,7 +25,7 @@ module.exports = {
     }
 
     let toastrJsTree = new Funnel(toastrPath, {
-      include: ['src/toastr.js'],
+      include: ['src/Toastr.ts'],
       destDir: 'toastr',
     });
     let toastrCssTree = new Funnel(toastrPath, {
