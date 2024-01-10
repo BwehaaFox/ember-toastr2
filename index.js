@@ -12,12 +12,12 @@ module.exports = {
     this._super.included.apply(this, arguments);
     this._ensureThisImport();
 
-    this.import('vendor/toastr/toastr.js');
-    this.import('vendor/toastr/build/toastr.css');
+    this.import('vendor/toastr2/src/Toastr.js');
+    this.import('vendor/toastr2/src/toastr.css');
   },
 
   treeForVendor: function (vendorTree) {
-    let toastrPath = path.dirname(require.resolve('toastr'));
+    let toastrPath = path.dirname(require.resolve('toastr2'));
     let trees = [];
 
     if (vendorTree) {
@@ -25,11 +25,11 @@ module.exports = {
     }
 
     let toastrJsTree = new Funnel(toastrPath, {
-      include: ['toastr.js'],
+      include: ['src/toastr.js'],
       destDir: 'toastr',
     });
     let toastrCssTree = new Funnel(toastrPath, {
-      include: ['build/toastr.css'],
+      include: ['src/toastr.css'],
       destDir: 'toastr',
     });
 
