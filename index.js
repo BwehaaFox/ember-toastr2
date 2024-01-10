@@ -12,7 +12,7 @@ module.exports = {
     this._super.included.apply(this, arguments);
     this._ensureThisImport();
 
-    this.import('vendor/toastr2/src/Toastr.js');
+    this.import('vendor/toastr2/src/Toastr.ts');
     this.import('vendor/toastr2/src/toastr.css');
   },
 
